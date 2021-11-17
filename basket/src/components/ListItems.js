@@ -22,15 +22,10 @@ export default class ListItems extends Component {
           classType={
             this.props.type === 'Groceries' ? 'item' : 'item in-basket'
           }
+          button={this.props.type === 'Groceries' ? <>✅</> : <>❌</>}
         />
       );
     }
     return items;
-  };
-
-  increment = (key) => {
-    const items = this.state.items[key];
-    items[key] += 1;
-    this.setState({ items });
   };
 }
