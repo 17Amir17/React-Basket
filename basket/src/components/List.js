@@ -6,18 +6,15 @@ export default class List extends Component {
   render() {
     return (
       <div className={'list'}>
-        <ListTitle title={this.props.title} />
-        <ListItems onClick={this.onClick} items={this.props.items} />
+        <ListTitle onClick={this.props.onTitleClick} title={this.props.title} />
+        <ListItems
+          type={this.props.title}
+          onClick={this.props.onItemsClick}
+          items={this.props.items}
+        />
       </div>
     );
   }
-
-  onClick = (e) => {
-    if (e.target.tagName === 'LI') {
-      const itemName = e.target.getAttribute('name');
-      if (this.props.title === 'Groceries') this.props.tellBasket(itemName);
-    }
-  };
 }
 
 List.defaultProps = {

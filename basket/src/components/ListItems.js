@@ -15,7 +15,11 @@ export default class ListItems extends Component {
     const items = [];
     for (const item in this.props.items) {
       items.push(
-        <Item name={item} key={item} count={this.props.items[item]} />
+        <Item
+          name={item}
+          key={item}
+          count={this.props.type === 'Groceries' ? '' : this.props.items[item]}
+        />
       );
     }
     return items;

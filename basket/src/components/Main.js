@@ -32,16 +32,35 @@ export default class Main extends Component {
   render() {
     return (
       <main>
-        <List items={this.items} tellBasket={this.tellBasket} />
-        <List title={'Basket'} items={this.basketItems} />
+        <List items={this.items} onItemsClick={this.tellBasket} />
+        <List
+          title={'Basket'}
+          onTitleClick={this.clearBasket}
+          items={this.basketItems}
+          onItemsClick={this.markout}
+        />
       </main>
     );
   }
 
-  tellBasket = (name) => {
+  tellBasket = (e) => {
+    let name;
+    if (e.target.tagName === 'LI') name = e.target.getAttribute('name');
+    else return;
     if (this.basketItems[name] || this.basketItems[name] === 0) {
       this.basketItems[name] += 1;
-    } else this.basketItems[name] = 0;
+    } else this.basketItems[name] = 1;
     this.setState({ basketItems: this.basketItems });
+  };
+
+  clearBasket = (e) => {
+    if (e.target.classList.contains('bin')) {
+      this.basketItems = {};
+    }
+    this.setState({ basketItems: this.basketItems });
+  };
+
+  markout = (e) => {
+    if (e.target.tagName === 'LI') e.target.classList.toggle('markout');
   };
 }
