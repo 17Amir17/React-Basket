@@ -7,7 +7,6 @@ export default class Footer extends Component {
     this.state = { underline: [true, false, false] };
   }
   render() {
-    console.log(this.state.underline);
     return (
       <footer className={'footer'}>
         <div>
@@ -61,5 +60,5 @@ export default class Footer extends Component {
 }
 
 Footer.defaultProps = {
-  underline: 0,
+  underline: [true, false, false],
 };
