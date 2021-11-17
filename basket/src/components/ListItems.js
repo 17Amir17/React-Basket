@@ -19,6 +19,9 @@ export default class ListItems extends Component {
           name={item}
           key={item}
           count={this.props.type === 'Groceries' ? '' : this.props.items[item]}
+          classType={
+            this.props.type === 'Groceries' ? 'item' : 'item in-basket'
+          }
         />
       );
     }
