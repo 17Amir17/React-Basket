@@ -3,7 +3,7 @@ import { Component } from 'react';
 export default class Header extends Component {
   render() {
     return (
-      <header>
+      <header className={'header'}>
         <h1>Basket</h1>
         <img src={this.props.src} alt={''}></img>
       </header>
