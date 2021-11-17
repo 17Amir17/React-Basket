@@ -2,7 +2,7 @@
   "name": "basket",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://17amir17.github.io/React-Basket/",
+  "homepage": "https://17amir17.github.io/React-Basket/basket/build",
   "dependencies": {
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.7",
