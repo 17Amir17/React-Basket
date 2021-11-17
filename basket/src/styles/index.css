@@ -34,6 +34,7 @@ ul {
   padding: 0.5em;
   border-style: solid;
   border-color: lightgray;
+  min-width: 7em;
 }
 
 .item:hover {
@@ -75,4 +76,14 @@ ul {
 
 .sorter:hover {
   cursor: pointer;
+}
+
+ul {
+  max-height: 20em;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+ul::-webkit-scrollbar {
+  background: transparent; /* Safari and Chrome */
 }

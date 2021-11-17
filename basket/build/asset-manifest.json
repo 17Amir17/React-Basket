@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/React-Basket/basket/build/static/css/main.5e91bc0e.chunk.css",
+    "main.css": "/React-Basket/basket/build/static/css/main.a612f2e0.chunk.css",
     "main.js": "/React-Basket/basket/build/static/js/main.9075e748.chunk.js",
     "main.js.map": "/React-Basket/basket/build/static/js/main.9075e748.chunk.js.map",
     "runtime-main.js": "/React-Basket/basket/build/static/js/runtime-main.a18ae024.js",
@@ -8,13 +8,13 @@
     "static/js/2.8bedfff1.chunk.js": "/React-Basket/basket/build/static/js/2.8bedfff1.chunk.js",
     "static/js/2.8bedfff1.chunk.js.map": "/React-Basket/basket/build/static/js/2.8bedfff1.chunk.js.map",
     "index.html": "/React-Basket/basket/build/index.html",
-    "static/css/main.5e91bc0e.chunk.css.map": "/React-Basket/basket/build/static/css/main.5e91bc0e.chunk.css.map",
+    "static/css/main.a612f2e0.chunk.css.map": "/React-Basket/basket/build/static/css/main.a612f2e0.chunk.css.map",
     "static/js/2.8bedfff1.chunk.js.LICENSE.txt": "/React-Basket/basket/build/static/js/2.8bedfff1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.a18ae024.js",
     "static/js/2.8bedfff1.chunk.js",
-    "static/css/main.5e91bc0e.chunk.css",
+    "static/css/main.a612f2e0.chunk.css",
     "static/js/main.9075e748.chunk.js"
   ]
 }
